@@ -95,8 +95,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let Mblock = document.querySelector('.map_block')
     console.log(Mblock);
     let elipse = document.querySelector('.map_elipse_info');
+    console.log(elipse);
     elipse.addEventListener('click' , () =>{
         Mblock.classList.toggle('flex');
+    })
+
+    document.addEventListener('click', (event) => {
+        console.log(event.target);
     })
     // let aud = document
     // console.log(document.getElementById('servis').offsetTop);
