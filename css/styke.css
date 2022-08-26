@@ -808,6 +808,7 @@ label .debug {
     flex: 1 1 0;
     box-sizing: border-box;
     width: 100%;
+    font-size: 14px;
   }
   .order {
     padding-bottom: 118px;
@@ -827,6 +828,10 @@ label .debug {
   }
   .why_items {
     padding-bottom: 92px;
+  }
+  .services_items {
+    margin-top: 36px;
+    row-gap: 36px;
   }
   .map_block {
     transition: 0.5s linear;

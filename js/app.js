@@ -4,54 +4,34 @@ document.addEventListener('DOMContentLoaded', () => {
     let checker = burger.querySelector('input[type=checkbox]');
     // let time = document.querySelector('inner')
     // console.log(document.querySelector('.page'));
+    const BlcokScrol = () => {
+        if(checker.checked) {
+            navigation.classList.toggle('active');
+            burger.classList.toggle('active');
+            checker.checked = false;
+            document.body.style.removeProperty('overflow');
+        }
+    }
+
+    
     burger.addEventListener('change', () => {
         event.preventDefault();
         // if (checker.checked !== false) {
             navigation.classList.toggle('active');
             burger.classList.toggle('active');
             document.body.style.overflow = 'hidden'
+            if(!checker.checked) {
+                checker.checked = false;
+                document.body.style.removeProperty('overflow');
+            }
+           
             // burger.closest('.active') 
             //     ? document.body.style.overflow = 'hidden'
             //         :document.body.style.removeProperty('overflow');
             // console.log(checker.checked);
             navigation.addEventListener('click', () => {
-                if(checker.checked) {
-                    navigation.classList.toggle('active');
-                    burger.classList.toggle('active');
-                    checker.checked = false;
-                    document.body.style.removeProperty('overflow');
-                }
-                // navigation.classList.toggle('active');
-                // burger.classList.toggle('active');
-                // burger.checked
-                // ? burger.removeAttribute('disabled')
-                //     :burger.setAttribute("disabled", true);
-
-                // navigation.classList.toggle('active');
-                // burger.classList.toggle('active');
-                // burger.closest('.active') 
-                //     ? document.body.style.overflow = 'hidden'
-                //         :document.body.style.removeProperty('overflow');
+                BlcokScrol();
             })
-          
-            // console.log(burger.closest('.active'));
-            // if(burger.closest('.active')){
-            //     console.log(2);
-            //     navigation.addEventListener('click', () => {
-            //         navigation.classList.remove('active')
-            //         console.log(navigation);
-            //         burger.classList.remove('active')
-            //         document.body.style.removeProperty('overflow');
-            //         // checker.prop("checked", false);
-            //         // console.log(1);
-            //     })
-            // }
-        // }
-        //  else {
-        //     navigation.classList.remove('active');
-        //     burger.classList.remove('active')
-        //     
-        // }
     })
 
  
@@ -110,8 +90,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
-    new WOW().init()
+    // new wow().init()
 
+    let Mblock = document.querySelector('.map_block')
+    console.log(Mblock);
+    let elipse = document.querySelector('.map_elipse_info');
+    elipse.addEventListener('click' , () =>{
+        Mblock.classList.toggle('flex');
+    })
     // let aud = document
     // console.log(document.getElementById('servis').offsetTop);
 
