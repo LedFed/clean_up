@@ -524,9 +524,6 @@ label .debug {
   font-size: 16px;
   line-height: 25px;
   /* identical to box height, or 156% */
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.045em;
   color: #FFFFFF;
   outline: none;
@@ -763,13 +760,15 @@ label .debug {
   .logo {
     line-height: 20px;
   }
+  .services_title {
+    font-size: 20px;
+  }
   .header_title {
     font-size: 26px;
-    line-height: 52px;
+    line-height: 32px;
   }
   .header_suptitle {
     font-size: 16px;
-    margin-bottom: 92px;
   }
   .header_btn {
     background-color: #fff;
@@ -799,12 +798,55 @@ label .debug {
     text-align: center;
   }
   .order_btn {
-    padding: 18px 102px;
+    padding: 18px 0;
+    width: 100%;
+    text-align: center;
   }
   .order_value {
-    padding: 18px 92px;
+    padding: 18px 40px;
+    display: flex;
+    flex: 1 1 0;
+    box-sizing: border-box;
+    width: 100%;
   }
   .order {
-    flex: 1 1 0;
+    padding-bottom: 118px;
+  }
+  .all_block {
+    left: 0;
+    padding: 0 16px;
+  }
+  .why_title {
+    font-size: 16px;
+  }
+  .why_text {
+    font-size: 14px;
+  }
+  .why_item {
+    align-items: flex-start;
+  }
+  .why_items {
+    padding-bottom: 92px;
+  }
+  .map_block {
+    transition: 0.5s linear;
+  }
+  .map_elipse_info {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    bottom: 5px;
+    left: 5px;
+    background-color: #706161;
+  }
+  .flex {
+    left: -100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .map {
+    filter: grayscale(0%);
   }
 }/*# sourceMappingURL=styke.css.map */
