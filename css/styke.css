@@ -849,6 +849,9 @@ label .debug {
   .flex {
     left: -100%;
   }
+  .footer_text {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 550px) {
   .map {
