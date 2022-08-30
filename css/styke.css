@@ -639,6 +639,10 @@ label .debug {
        column-gap: 20px;
 }
 
+.map_elipse_info {
+  display: none;
+}
+
 @media (max-width: 1240px) {
   .container {
     max-width: 990px;
@@ -854,6 +858,7 @@ label .debug {
     }
   }
   .map_elipse_info {
+    display: block;
     width: 60px;
     height: 60px;
     border-radius: 50%;

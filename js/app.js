@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
-    // new wow().init()
+    new WOW().init();
 
     let Mblock = document.querySelector('.map_block')
     console.log(Mblock);
